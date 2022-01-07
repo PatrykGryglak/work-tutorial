@@ -42,8 +42,11 @@ function popUpCreation(element, title, description){
         newP.innerText = description;
         document.body.append(newDiv);
         newDiv.append(newIcon, newH, newP);
+        bgDarkUp = document.querySelector('.daily-tasks');
+        bgDarkUp.style['background-color'] = 'rgb(50, 50, 50)';
         newIcon.addEventListener('click', function (){
             newDiv.remove();
+            bgDarkUp.style['background-color'] = 'rgb(245, 245, 245)';
         })
     });
 }
