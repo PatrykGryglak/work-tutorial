@@ -42,11 +42,20 @@ function popUpCreation(element, title, description){
         newP.innerText = description;
         document.body.append(newDiv);
         newDiv.append(newIcon, newH, newP);
-        bgDarkUp = document.querySelector('.daily-tasks');
-        bgDarkUp.style['background-color'] = 'rgb(50, 50, 50)';
+        bgDarkUp = document.querySelector('.main-section');
+        bgDarkUp.style['filter'] = 'blur(0.5rem)'
+        bgDarkUp.style['pointer-events'] = 'none';
         newIcon.addEventListener('click', function (){
             newDiv.remove();
-            bgDarkUp.style['background-color'] = 'rgb(245, 245, 245)';
+            bgDarkUp.style['filter'] = 'blur(0)'
+            bgDarkUp.style['pointer-events'] = 'auto';            
+        })
+        document.addEventListener('keydown', function(event){
+            if(event.key === 'Escape'){
+                newDiv.remove()
+                bgDarkUp.style['filter'] = 'blur(0)'
+                bgDarkUp.style['pointer-events'] = 'auto';
+            }
         })
     });
 }
