@@ -34,6 +34,21 @@
     width: 100%;
     font-size: 1.5rem;
     font-weight: 800;
+    position: relative;
+}
+
+.header a {
+    position: absolute;
+    left: 5%;
+    cursor: pointer;
+    padding: 30px;
+    text-decoration: none;
+    color: rgb(61, 60, 60);
+}
+.header a:hover {
+    color: silver;
+    font-size: larger;
+    transition: 0.3s ease;
 }
 
 .task {
@@ -67,6 +82,7 @@
     color: rgb(8, 8, 8);
     text-align: center;
     overflow: scroll;
+    padding: 0 80px 0 80px;
 }
 
 .pop-up i {

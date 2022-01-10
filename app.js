@@ -1,29 +1,35 @@
 
-const data = {
-    'Check if yesterdays work is done' : "ladne slowo",
-    'Check your email' : "sialalala",
-    'Check your redmine account': "bleblebel",
-    'Check devices to set up' : "sdasdas",
-    'Your time to pick up phone' : "test",
-    'Check if yesterdays work is donee' : "ladne slowo",
-    'Check your emaill' : "sialalala",
-    'Check your redmine accountt': "bleblebel",
-    'Check devices to set upp' : "sdasdas",
-    'Your time to pick up phonee' : "test"
-}
+function backArrow(){
+    headerDiv = document.querySelector('.header');
+    backToMainPage = document.createElement('a');
+    backToMainPage.href = "/./index.html";
+    backToMainPage.title = "Back to main page";
+    backIcon = document.createElement('i');
+    backIcon.classList.add('fas','fa-chevron-left');
+    backToMainPage.append(backIcon);
+    headerDiv.append(backToMainPage);
+};
+backArrow();
 
 function taskDivsCreating(){
-    for (let task in data){
-        taskDiv = document.createElement('div');
-        taskDiv.classList.add('task');
-        taskP = document.createElement('p');
-        taskP.innerText = task;
-        taskDiv.append(taskP);
-        taskDivParent = document.querySelector('.main-page');
-        taskDivParent.append(taskDiv);
-        popUpCreation(taskDiv, task, data[task]);
+    pageTitle = document.querySelector('title').innerText;
+    console.log(pageTitle);
+    for (let subPage in data){
+        console.log(subPage);
+        if(pageTitle === subPage){
+            for (let task in data[subPage]){
+                taskDiv = document.createElement('div');
+                taskDiv.classList.add('task');
+                taskP = document.createElement('p');
+                taskP.innerText = task;
+                taskDiv.append(taskP);
+                taskDivParent = document.querySelector('.main-page');
+                taskDivParent.append(taskDiv);
+                popUpCreation(taskDiv, task, data[subPage][task]);
+            }
+        }
     }
-}
+};
 
 taskDivsCreating();
 
