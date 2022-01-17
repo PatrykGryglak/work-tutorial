@@ -9,9 +9,9 @@ const data = {
         'Zmiany platne' : "Sa to miedzy innymi uruchomienia, wymiany, likwidacje, itp. wykonywane dla Bankow Spoldzielczych. Dokladny opis jak nalezy postepowac ze zmianami platnymi znajdziesz w zakladce 'paid changes' na stronie glownej."
     },
     "Phonecalls" : {
-        'BLDLDASdASDHASD' : "ladne slowo",
-        'What ta ' : "sialalala",
-        'Checdasdasdcnxcasbdhaskldas account': "bleblebel",
+        'BLDLDASdASDHASD' : "ladne slowo tutej",
+        'What ta' : "sialalala",
+        'Checdasdasdcnxcasbdhaskldas account': "bleblebel tutej",
         // 'Check devices to set up' : "sdasdas",
         // 'Your time to pick up phone' : "test",
         // 'Check if yesterdays work is donee' : "ladne slowo",
@@ -32,18 +32,21 @@ const data = {
         // 'Check devices to set upp' : "sdasdas",
         // 'Your time to pick up phonee' : "test"
     },
-    // "Procedures" : {
-    //     'Check if yesterdays work is done' : "ladne slowo",
-    //     'Check your email' : "sialalala",
-    //     'Check your redmine account': "bleblebel",
-    //     'Check devices to set up' : "sdasdas",
-    //     'Your time to pick up phone' : "test",
-    //     'Check if yesterdays work is donee' : "ladne slowo",
-    //     'Check your emaill' : "sialalala",
-    //     'Check your redmine accountt': "bleblebel",
-    //     'Check devices to set upp' : "sdasdas",
-    //     'Your time to pick up phonee' : "test"
-    // }
+    "Procedures" : {
+        'Check if yesterdays work is done' : "ladne slowo",
+        'Check your email' : "sialalala",
+        'Check your redmine account': "bleblebel",
+        'Check devices to set up' : "sdasdas",
+        'Your time to pick up phone' : "test",
+        'Check if yesterdays work is donee' : "ladne slowo",
+        'Check your emaill' : "sialalala",
+        'Check your redmine accountt': "bleblebel",
+        'Check devices to set upp' : "sdasdas",
+        'Your time to pick up phonee' : "test"
+    },
+    "Test1" : {
+        'some text' : "no text at all"
+    }
 };
 //dodaj do niego klucz o nazwie pierwszej podstrony z wartoscia ktora jest zawartosc twojego starego 'data
 
@@ -62,7 +65,3 @@ const data = {
 //     'Check devices to set upp' : "sdasdas",
 //     'Your time to pick up phonee' : "test"
 // }
-
-const phonecallsData = {
-
-}
