@@ -11,7 +11,7 @@ const data = {
     "Phonecalls" : {
         'BLDLDASdASDHASD' : "ladne slowo tutej",
         'What ta' : "sialalala",
-        'Checdasdasdcnxcasbdhaskldas account': "bleblebel tutej",
+        'Check account': "some text",
         // 'Check devices to set up' : "sdasdas",
         // 'Your time to pick up phone' : "test",
         // 'Check if yesterdays work is donee' : "ladne slowo",
@@ -22,7 +22,12 @@ const data = {
     },
     "Paid Changes" : {
         'C23123123123' : "ladne slowo duszek kwiatki kwadrat",
-        'him 12312312' : "sialalala kawusia z zoneczka kochana moja piekna",
+        'him 12312312' : "sialalala kawusia",
+        'tessting': "to jest pewne",
+        'tessting': "to moze jest pewne",
+        'tessting': "to bedzie jest pewne",
+        'tessting': "to nie jest pewne",
+        'tessting': "to jest nie pewne",
         // 'Check your redmine account': "bleblebel",
         // 'Check devices to set up' : "sdasdas",
         // 'Your time to pick up phone' : "test",
@@ -45,7 +50,17 @@ const data = {
         'Your time to pick up phonee' : "test"
     },
     "Test1" : {
-        'some text' : "no text at all"
+        'some text' : "no text at all",
+        'Your time to pick up phone' : "test",
+        'Your time to pick up phone' : "test",
+        'Your time to pick up phone' : "test",
+        'Your time to pick up phone' : "test",
+        'Your time to pick up phone' : "test",
+        'Your time to pick up phone' : "test",
+        'Your time to pick up phone' : "test",
+        'Your time to pick up phone' : "test",
+        'Your time to pick up phone' : "test",
+
     }
 };
 //dodaj do niego klucz o nazwie pierwszej podstrony z wartoscia ktora jest zawartosc twojego starego 'data

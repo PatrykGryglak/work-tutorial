@@ -66,14 +66,11 @@ function search(){
                     if(resultArr.includes(searchValue)){
                         resultsPlace.push(resultArr);
                         let index = resultArr.indexOf(searchValue);
-                        const li = document.createElement('li');
+                        const divTask = document.createElement('div');
+                        divTask.classList.add('results-task');
                         const p = document.createElement('p');
-                        const i = document.createElement('i');
-                        const a = document.createElement('a');
-                        i.classList.add('fas', 'fa-arrow-right');
-                        li.append(p, i, a);
-                        resultContainer.append(li);
-                        //moze warto zrobic petle
+                        divTask.append(p);
+                        resultContainer.append(divTask);
                         let wordsBeforeNum = index-3;
                         if(wordsBeforeNum === -3){
                             num = 0;
@@ -86,9 +83,7 @@ function search(){
                         }
                         const readyArr = resultArr.slice(index-num, index+6).join(" ");
                         p.innerText = `... ${readyArr}...`;
-                        
-                        a.innerText = "skocz do informacji";
-                        a.addEventListener('click', function(){
+                        divTask.addEventListener('click', function(){
                             const searchPopUp = document.createElement('div');
                             const searchPopUpExit = document.createElement('i');
                             searchPopUp.classList.add('pop-up');
